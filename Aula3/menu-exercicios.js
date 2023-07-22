@@ -1,6 +1,6 @@
 import PromptSync from "prompt-sync";
 
-import { verificarMayorIdade, numerosPares, tabuada, calcular } from "./exercicios.js";
+import { verificarMayorIdade, numerosPares, tabuada, calcular, contagemRegressiva, numerosImpares, numeros, numeroDiferente } from "./exercicios.js";
 
 const prompt = PromptSync();
 
@@ -11,7 +11,7 @@ let continuar;
 
 do {
 
-    exercicio = parseInt(prompt("Digite um numero que represente um exercicio de 1 a 6: "))
+    exercicio = parseInt(prompt("Digite um numero que represente um exercicio de 1 a 10: "))
 
     switch (exercicio) {
         case 1:
@@ -42,8 +42,20 @@ do {
         case 6:
             calcular();
             break;
+        case 7:
+            contagemRegressiva();
+            break;
+        case 8:
+            numerosImpares();
+            break;
+        case 9:
+            numeros();
+            break;
+        case 10:
+            numeroDiferente();
+            break;
         default:
-            console.log("Digite o numero de 1 a 6");
+            console.log("Digite o numero de 1 a 10");
             break;
     }
 

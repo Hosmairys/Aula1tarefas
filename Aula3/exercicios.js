@@ -22,7 +22,6 @@ export function verificarMayorIdade() {
     console.log(`${pessoa.nome}, sua idade ${pessoa.idade}, é valida`);
 }
 
-
 export function numerosPares() {
     console.log("Imprimir números pares de 1 a 10.");
 
@@ -43,7 +42,7 @@ export function tabuada() {
 
 export function calcular() {
     console.log("Calcular a soma dos números de 1 a 100 utilizando a estrutura while.");
- 
+
     let resultado = 0
     let contador = 1;
 
@@ -52,4 +51,45 @@ export function calcular() {
         console.log(resultado);
         contador++
     }
+}
+
+export function contagemRegressiva() {
+    console.log("Faça um programa que receba um número do usuário e mostre no console a contagem regressiva até 0.");
+
+    let numero = parseInt(prompt("Digite um numero: "))
+
+    while (numero >= 0) {
+        console.log(numero);
+        numero--;
+    }
+}
+
+export function numerosImpares() {
+    console.log("Faça um programa que imprima os números ímpares de 0 a 50.");
+
+    for (let contador = 1; contador < 50; contador += 2) {
+        console.log(contador);
+
+    }
+
+}
+
+export function numeros() {
+    console.log("Imprimir números de 1 a 10 utilizando o loop for");
+
+    for (let contador = 1; contador <= 10; contador++) {
+        console.log(contador);
+
+    }
+}
+
+export function numeroDiferente() {
+    console.log("Faça um programa que receba um número do usuário e continue a pedir o número se o numero for diferente de 0.");
+
+    let numero;
+
+    do {
+        numero = prompt("Digite um número: ")
+
+    } while (numero != "0");
 }
